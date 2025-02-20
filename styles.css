@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f5f5f7;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #1d1d1f;
+    margin-bottom: 10px;
+}
+
+.comparison-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.platform {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1d1d1f;
+    font-size: 1.5rem;
+}
+
+.icon-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    min-height: 120px;
+    justify-content: space-between;
+}
+
+.icon-item img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+.material-icons {
+    font-family: 'Material Symbols Rounded';
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #333;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.icon-names {
+    text-align: center;
+    width: 100%;
+}
+
+.sf-name {
+    font-size: 0.8rem;
+    color: #007AFF;  /* iOS blue color */
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+.material-name {
+    font-size: 0.8rem;
+    color: #4CAF50;  /* Material Design green */
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .comparison-container {
+        flex-direction: column;
+    }
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url("https://developer.apple.com/fonts/sf-pro/SF-Pro.ttf") format("truetype");
+}
+
+.sf-symbol {
+    font-family: "SF Pro", ".SFNSDisplay-Regular", "SF Symbol", "-apple-system";
+    -webkit-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga" 1;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.match-indicator {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.match-indicator.ok {
+    background-color: #4CAF50;  /* Green */
+}
+
+.match-indicator.soso {
+    background-color: #FFC107;  /* Yellow */
+}
+
+.match-indicator.bad {
+    background-color: #F44336;  /* Red */
+}
+
+@media (max-width: 1200px) {
+    .icon-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .icon-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .icon-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .icon-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Remove these styles */
+.download-button,
+.icon-download,
+.icon-download .material-symbols-rounded {
+    display: none;
+} 

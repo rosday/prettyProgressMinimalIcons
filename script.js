@@ -136,7 +136,7 @@ const sfSymbols = [
     { sf: "music.note", material: "music_note", matchQuality: "ok" },
     { sf: "hand.raised.fill", material: "back_hand", matchQuality: "ok" },
     { sf: "chart.pie.fill", material: "pie_chart", matchQuality: "ok" },
-    { sf: "hourglass", material: "hourglass_empty", matchQuality: "ok" },
+    { sf: "hourglass", material: "hourglass_bottom", matchQuality: "ok" },
     { sf: "touchid", material: "fingerprint", matchQuality: "ok" },
     { sf: "lightbulb.fill", material: "lightbulb", matchQuality: "ok" },
     { sf: "tshirt.fill", material: "laundry", matchQuality: "ok" },
